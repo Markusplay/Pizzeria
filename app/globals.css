@@ -1,9 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  padding: 20px;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.main-section {
+  display: flex;
+  justify-content: space-around;
+}
+.orange {
+  color: orange;
+}
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.action-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 200px;
+}
+.action-card a {
+  text-decoration: none;
+  color: orange;
 }
