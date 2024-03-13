@@ -18,7 +18,7 @@ export default function Home() {
         <Image src="/main-pizza.svg" width={365} height={365} alt="Nice big pizza"/>
       </section>
       <div>
-      <button className="border-orange-400 border-4 text-orange-400 p-2 mt-2 font-bold">Go to list</button>
+      <button className="goto-list">Go to list</button>
         <h1 className="w-full flex justify-center items-center text-5xl">Our Special Recipes</h1>
         <div className="flex justify-between mt-4">
           {products.map((product,index)=>(
