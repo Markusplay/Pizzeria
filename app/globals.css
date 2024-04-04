@@ -1,13 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 20px;
 }
+
 #header {
   display: flex;
   flex-direction: row;
@@ -16,10 +21,29 @@ body {
   justify-content: center;
   gap: 30px;
 }
+
+#cards {
+  flex-direction: row;
+  justify-content: center;
+}
+
+#product-cards{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+#header h1{
+  display: flex;
+  white-space: nowrap;
+}
+
 .main-section {
   display: flex;
   justify-content: space-around;
 }
+
 .orange {
   color: orange;
 }
@@ -31,6 +55,7 @@ body {
   gap: 10px;
   width: 200px;
 }
+
 .action-card a {
   text-decoration: none;
   color: orange;
@@ -39,7 +64,46 @@ body {
 .goto-list {
   font-size: 20px;
   background-color: white;
+  margin-top: 20px;
   color: orange;
   padding: 4px;
   border: 4px solid orange;
 }
+
+.first-pizza {
+  width: 365px;
+  height: 365px;
+}
+
+
+/* tablet */
+@media screen and (max-width:992px) {
+  #product-cards{
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-pizza {
+    width: 265px;
+    height: 265px;
+  }
+}
+/* mobile */
+@media screen and (max-width:480px) {
+  #header {
+    font-size: 18px;
+  }
+
+  .first-pizza {
+    display: none;
+  }
+}
+
+
